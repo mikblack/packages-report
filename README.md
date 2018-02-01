@@ -10,8 +10,8 @@ Workshop challenge checklist
 
 -   ~~Have a look around the files here. Where are the R scripts? What are the directories `data` and `figs` for?~~
     - R scripts live in the "R" directory
-    - "data" contains data files (csv)
-    - "figs" contain figures (png)
+    - `data` contains data files (csv)
+    - `figs` contain figures (png)
 -   Notice that this README is an `.Rmd` file. That means it could contain R code and will need to be rendered to create `README.md`.
 -   Open [R/01\_write-installed-packages.R](R/01_write-installed-packages.R). Write the script as directed. Run it. Commit and push the current state.
 -   Open [R/02\_wrangle-packages.R](R/02_wrangle-packages.R). Fill in the missing pieces of the script as directed. Run it. Commit and push the current state.
