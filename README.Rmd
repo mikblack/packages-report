@@ -10,6 +10,8 @@ knitr::opts_chunk$set(
   comment = "#>"
 )
 library(tidyverse)
+library(here)
+library(knitr)
 ```
 
 # packages-report
@@ -32,19 +34,22 @@ library(tidyverse)
 
 ## Overview
 
-The goal of packages-report is to FINISH THIS SENTENCE.
+The goal of packages-report is to count the number of R packages installed on the user's
+system, that were built under each version of R.
 
 ```{r, include = FALSE}
 ## load data/add-on-packages-freqtable.csv here in this chunk
+apt_freqtable <- read_csv(here("data/add-on-packages-freqtable.csv"))
 ```
 
-I have `FILL THIS IN!!!` add-on packages installed.
+I have `sum(apt_freqtable$n)` add-on packages installed.
 
 Here's how they break down in terms of which version of R they were built under, which is related to how recently they were updated on CRAN.
 
 ```{r, echo = FALSE}
 ## print the frequency table here
 ## make it prettier if you know how
+kable(apt_freqtable)
 ```
 
 ![](figs/built-barchart.png)

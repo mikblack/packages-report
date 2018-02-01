@@ -23,11 +23,19 @@ Workshop challenge checklist
 Overview
 --------
 
-The goal of packages-report is to FINISH THIS SENTENCE.
+The goal of packages-report is to count the number of R packages installed on the user's system, that were built under each version of R.
 
-I have `FILL THIS IN!!!` add-on packages installed.
+I have `sum(apt_freqtable$n)` add-on packages installed.
 
 Here's how they break down in terms of which version of R they were built under, which is related to how recently they were updated on CRAN.
+
+| Built |    n|       prop|
+|:------|----:|----------:|
+| 3.3.2 |    6|  0.0128205|
+| 3.4.0 |  165|  0.3525641|
+| 3.4.1 |   38|  0.0811966|
+| 3.4.2 |  107|  0.2286325|
+| 3.4.3 |  152|  0.3247863|
 
 ![](figs/built-barchart.png)
 
